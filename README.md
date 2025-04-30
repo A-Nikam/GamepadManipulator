@@ -1,6 +1,6 @@
 # GamepadManipulator
 
-Welcome to **GamepadManipulator**! This project offers a **3-Degree-of-Freedom (DOF)** robotic arm controlled using an Xbox gamepad. Think of it as a miniature version of the manipulator arms used in satellite docking.
+This project presents a **3 Degree of Freedom (DOF) robotic manipulator** system controllable via an Xbox gamepad. It demonstrates real-time joint control and includes a feature for recording and replaying movement sequences. The system architecture involves a Python script for input processing and control logic, communicating serially with an Arduino Uno that directly drives the manipulator's servo motors. This project was inspired by the control principles used in robotic arms for tasks such as satellite docking.
 
 ---
 
