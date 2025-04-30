@@ -1,4 +1,4 @@
-###GamepadManipulator###
+#GamepadManipulator
 Hey there! This project brings you a 3-Degree-of-Freedom robotic arm that you control with an Xbox gamepad. Think of it as a miniature version of those manipulator arms used for satellite docking. A Python script on your laptop communicates over serial with an Arduino Uno, which in turn drives the servos for the base, shoulder and elbow. There’s even a recording feature so you can capture a sequence of movements and play them back.
 
 Features
