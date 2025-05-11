@@ -23,6 +23,15 @@ To get started, you’ll need the following:
 
 ## Software Requirements
 On your laptop, make sure you have:
-- **Python 3.x** installed, along with the following packages:
+- **Python 3.13.3** installed, along with the following packages:
+- **Pygame Library:** Used for reading gamepad inputs. Install via pip:
   ```bash
-  pip install pygame pyserial
+  pip isntall pygame
+  ```
+- **PySerial Library:** Used for serial communication with the Arduino. Install via pip:
+  ```bash
+  pip install pyserial
+  ```
+- **Arduino IDE:** Required for compiling and uploading the sketch to the Arduino Uno.
+
+  
