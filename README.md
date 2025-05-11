@@ -38,17 +38,17 @@ On your laptop, make sure you have:
 
 ## Setup and Implementation
 Follow these steps to set up and run the project:
-- Assemble Manipulator Hardware:
-     -Construct the physical arm structure.
-  Mount the MG90S servo for base rotation.
-  Install the two MG995 servos at the shoulder and elbow joints.
-  Connect the arm linkages to the servo horns, ensuring free movement within the intended range.
-  [Provide any specific assembly notes relevant to your physical build here.]
- - Wire Electronic Components:
-Connect the three Li-ion batteries in series to the input of the buck converter.
-Connect the output of the buck converter to the VCC and GND pins of all three servo motors. Warning: Do not attempt to power the servos directly from the Arduino's 5V pin, as they draw more current than it can safely supply.
-Connect the signal pin of the Base servo (MG90S) to Arduino Digital Pin 9.
-Connect the signal pin of the Shoulder servo (MG995) to Arduino Digital Pin 10.
-Connect the signal pin of the Elbow servo (MG995) to Arduino Digital Pin 11.
-Establish a common ground by connecting a GND wire from the buck converter output to an Arduino GND pin.
+- **Assemble Manipulator Hardware:**
+     - Construct the physical arm structure.
+     - Mount the MG90S servo for base rotation.
+     - Install the two MG995 servos at the shoulder and elbow joints.
+     - Connect the arm linkages to the servo horns, ensuring free movement within the intended range.
+     - [Provide any specific assembly notes relevant to your physical build here.]
+ - **Wire Electronic Components:**
+   - Connect the three Li-ion batteries in series to the input of the buck converter.
+   - Connect the output of the buck converter to the VCC and GND pins of all three servo motors. Warning: Do not attempt to power the servos directly from the Arduino's 5V pin, as they draw more current than it can safely supply.
+   - Connect the signal pin of the Base servo (MG90S) to Arduino Digital Pin 9.
+   - Connect the signal pin of the Shoulder servo (MG995) to Arduino Digital Pin 10.
+   - Connect the signal pin of the Elbow servo (MG995) to Arduino Digital Pin 11.
+   - Establish a common ground by connecting a GND wire from the buck converter output to an Arduino GND pin.
 Connect the Arduino to your computer using the USB cable.
