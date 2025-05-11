@@ -51,4 +51,19 @@ Follow these steps to set up and run the project:
    - Connect the signal pin of the Shoulder servo (MG995) to Arduino Digital Pin 10.
    - Connect the signal pin of the Elbow servo (MG995) to Arduino Digital Pin 11.
    - Establish a common ground by connecting a GND wire from the buck converter output to an Arduino GND pin.
-Connect the Arduino to your computer using the USB cable.
+   - Connect the Arduino to your computer using the USB cable.
+ - **Upload Arduino Sketch:**
+   - Open the arduino_code.ino file in the Arduino IDE.
+   - Select the correct board (Arduino Uno) and the serial port assigned to it under the Tools menu.
+   - Verify that the servo pin definitions (BASE_SERVO_PIN, SHOULDER_SERVO_PIN, ELBOW_SERVO_PIN) in the sketch match your physical wiring.
+   - Confirm the SERIAL_BAUD_RATE (115200) matches the value in the Python script.
+   - Compile and upload the sketch to your Arduino Uno.
+ - **Install Python Libraries:**
+   -Open a terminal or command prompt.
+ - **Execute the following command to install the necessary Python libraries:**
+   - pip install pygame pyserial
+ - **Configure Python Script:**
+   - Open the python_controller.py script in a text editor.
+   - Essential: Update the SERIAL_PORT variable near the top of the script to the serial port assigned to your Arduino. This can be found in the Arduino IDE's Tools > Port menu (e.g., 'COM4' on Windows, '/dev/ttyACM0' or '/dev/ttyUSB0' on Linux/macOS).
+   - Adjust the step size constants (BASE_STEP_DEG, SHOULDER_STEP_DEG, ELBOW_STEP_DEG) if you wish to modify the movement increment per controller input.
+   - Review and fine-tune the servo limits (base_servo_min, base_servo_max, etc.) to accurately reflect the safe operational range of your physical arm and servos. Ensure these limits are consistent with the constrain values used in the Arduino sketch.
