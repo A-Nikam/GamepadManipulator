@@ -13,11 +13,25 @@ This project presents a **3 Degree of Freedom (DOF) robotic manipulator** system
 
 ## Hardware Requirements
 To get started, you’ll need the following:
-- A **3 DOF arm frame** (either 3D-printed or a kit).
-- An **Arduino Uno** (mini or standard version).
-- **Two MG995 servos** for the shoulder and elbow joints.
-- **One MG90S servo** for the base.
-- An **Xbox controller** (or any Pygame-compatible gamepad).
+ - **3-Axis Control:** Provides control over the manipulator's Base (Yaw), Shoulder (Pitch), and Elbow (Pitch) joints.
+ - **Intuitive Gamepad Interface:** Real-time manipulation using a standard Xbox controller.
+ - **Serial Communication:** Establishes robust communication between the control software (Python) and the hardware driver (Arduino).
+ - **Movement Recording:** Ability to capture and store sequences of commanded joint positions.
+ - **Movement Playback:** Functionality to accurately replay recorded sequences from a designated starting point.
+ - **Configurable Joint Limits:** Software-defined limits to constrain joint movement within safe or desired ranges.
+ - **Home Position Reset:** A quick command to return the manipulator to a predefined initial configuration.
+
+---
+
+## Hardware Requirements
+To replicate this project, the following hardware components are necessary:
+ - **3 DOF Robotic Manipulator Structure:** A physical frame providing base, shoulder, and elbow articulation.
+ - **Arduino Uno:** Microcontroller board.
+ - **MG995 Servo Motors (x3):** High-torque servos for the shoulder and elbow joints.
+ - **Xbox Controller:** Gamepad supported by Pygame.
+ - **USB A-to-B Cable:** To connect the Arduino to the computer.
+ - **Li-ion Batteries (x3):** Power source for the servos (ensure adequate current rating).
+ - **Buck Converter:** To regulate the battery voltage down to the appropriate level for the servos (typically 5-6V).
 
 ---
 
