@@ -104,4 +104,4 @@ The included modified_3dof_arm.urdf file provides a formal description of the ro
 ---
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [View License](LICENSE.md) file for details.
